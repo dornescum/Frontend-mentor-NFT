@@ -821,7 +821,14 @@ a {
   padding: 2rem;
   margin: 2rem;
   border-radius: 1rem;
-  width: 42rem;
+  width: 672px;
+}
+@media (max-width: 480px) {
+  .container .card {
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 16rem;
+  }
 }
 .container .card .card-img img {
   border-radius: 1rem;
@@ -829,6 +836,12 @@ a {
   position: relative;
   width: 38rem;
   height: 38rem;
+}
+@media (max-width: 480px) {
+  .container .card .card-img img {
+    width: 14rem;
+    height: 14rem;
+  }
 }
 .container .card .card-img .image-overlay {
   position: absolute;
@@ -845,6 +858,13 @@ a {
   opacity: 0.5;
   transition: all 0.3s ease;
 }
+@media (max-width: 480px) {
+  .container .card .card-img .image-overlay {
+    width: 14rem;
+    height: 14rem;
+    top: 5.5rem;
+  }
+}
 .container .card .card-img .image-overlay img {
   height: 3rem;
   width: 3rem;
@@ -856,7 +876,7 @@ a {
   fill: white;
 }
 .container .card .card-info {
-  padding: 2rem 0 0 0;
+  padding: 32px 0 0 0;
 }
 .container .card .card-info .card-title {
   color: white;
@@ -866,14 +886,29 @@ a {
   color: #00fff7;
   transition: all 0.3s ease;
 }
+@media (max-width: 480px) {
+  .container .card .card-info .card-title {
+    font-size: 1.4rem;
+  }
+}
 .container .card .card-info .card-description {
   font-size: 38px;
   color: #8bacda;
   opacity: 0.8;
 }
+@media (max-width: 480px) {
+  .container .card .card-info .card-description {
+    font-size: 15px;
+  }
+}
 .container .card .card-info .card-timer {
   border-bottom: 1px solid #8bacda;
   padding-bottom: 2.5rem;
+}
+@media (max-width: 480px) {
+  .container .card .card-info .card-timer {
+    padding-bottom: 1.5rem;
+  }
 }
 .container .card .card-info .card-timer .card-price {
   display: flex;
@@ -885,21 +920,46 @@ a {
   justify-content: flex-start;
   color: #00fff7;
 }
-.container .card .card-info .card-timer .card-price .card-price-value svg {
+.container .card .card-info .card-timer .card-price .card-price-value img {
   height: 28px;
-  padding: 6px 0 0 0;
 }
 .container .card .card-info .card-timer .card-price .card-price-value p {
   margin: 0 0 0 1rem;
   font-size: 26px;
 }
+@media (max-width: 480px) {
+  .container .card .card-info .card-timer .card-price .card-price-value p {
+    font-size: 16px;
+    padding-top: 7px;
+  }
+}
 .container .card .card-info .card-timer .card-price .card-days {
   color: #8bacda;
   font-size: 26px;
   margin: 0;
+  display: flex;
+  justify-content: flex-start;
 }
-.container .card .card-info .card-timer .card-price .card-days svg {
-  padding: 3px 0 0 0;
+@media (max-width: 480px) {
+  .container .card .card-info .card-timer .card-price .card-days {
+    font-size: 16px;
+    height: 17px;
+    padding: 2px 5px 0 0;
+  }
+}
+.container .card .card-info .card-timer .card-price .card-days img {
+  height: 27px;
+  padding: 2px 5px 0 0;
+}
+@media (max-width: 480px) {
+  .container .card .card-info .card-timer .card-price .card-days img {
+    height: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .container .card .card-info .card-timer .card-price .card-days span {
+    padding: 4px 0 0 0;
+  }
 }
 .container .card .card-info .card-footer {
   display: flex;
@@ -911,10 +971,22 @@ a {
   border-radius: 50%;
   height: 4rem;
 }
+@media (max-width: 480px) {
+  .container .card .card-info .card-footer img {
+    margin: 1rem 1rem 0 0;
+    height: 2rem;
+  }
+}
 .container .card .card-info .card-footer p {
   margin: 3rem 0 0 1rem;
   font-size: 26px;
   color: #8bacda;
+}
+@media (max-width: 480px) {
+  .container .card .card-info .card-footer p {
+    margin: 1.5rem 0 0 0;
+    font-size: 15px;
+  }
 }
 .container .card .card-info .card-footer p span {
   color: white;
