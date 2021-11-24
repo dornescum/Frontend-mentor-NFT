@@ -6,6 +6,9 @@
   padding: 2rem;
   margin: 2rem auto;
   @include display_flex;
+  @media (max-width: 480px) {
+  max-width: 375px;
+  }
 
   .card {
     background: $blue-card;
@@ -13,7 +16,9 @@
     margin: 2rem;
     border-radius: $radius;
     //! width: 42rem google chrome error for svg if rem;
-    width: 672px;
+    //width: 672px;
+    width: 42rem;
+    width: 34rem;
     @media (max-width: 480px) {
       padding: 1rem;
       margin: .5rem;
@@ -27,8 +32,8 @@
         cursor: pointer;
         position: relative;
         //width: 100%;
-        width: 38rem;
-        height: 38rem;
+        width: 30rem;
+        height: 30rem;
         @media (max-width: 480px) {
           width: 14rem;
           height: 14rem;
@@ -40,8 +45,8 @@
         top: 8rem;
         background: $cyan;
         z-index: 100;
-        width: 38rem;
-        height: 38rem;
+        width: 30rem;
+        height: 30rem;
         border-radius: $radius;
         cursor: pointer;
         opacity: 0;
@@ -91,7 +96,7 @@
       }
 
       .card-description {
-        font-size: 38px;
+        font-size: 30px;
         color: $blue;
         opacity: 0.8;
         @media (max-width: 480px) {
@@ -120,7 +125,7 @@
 
 
             p {
-              margin: 0 0 0 1rem;
+              margin: 0 0 0 .5rem;
               font-size: 26px;
 
               @media (max-width: 480px) {
